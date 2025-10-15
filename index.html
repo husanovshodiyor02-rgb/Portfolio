@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="./img/lg.png">
+    <link rel="shortcut icon" href="./img/lg.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-[var(--background)]">
@@ -20,9 +20,13 @@
             <a href="https://figma.com/"><img src="./img/Figma.png" alt=""></a>
         </div>
         
-        <div class="container1">
-            <nav class="flex items-center justify-between my-13">
-                <img src="./img/logo.png" alt="">
+        <div class="container1 sticky top-0 z-10 bg-[var(--background)] w-full h-15">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-2">
+                    <img src="./img/logo.png" alt="">
+                    <h1 class="font-family font-bold text-base text-[color:var(--white)]">Shodiyor</h1>
+                </div>
+                
                 <ul class="hidden md:flex items-center gap-5">
                     <li><a href="#" class="font-family font-medium text-base text-[color:var(--primary)] relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">#<span class="font-normal text-base text-[color:var(--gray)] hover:text-[color:var(--white)]">home</span></a></li>
                     <li><a href="#" class="font-family font-medium text-base text-[color:var(--primary)] relative inline-block hover:text-[gray] after:absolute after:bottom-0 after:right-0 after:h-[2px] after:w-0 after:bg-[gray] after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full">#<span class="font-normal text-base text-[color:var(--gray)] hover:text-[color:var(--white)]">works</span></a></li>
@@ -37,7 +41,10 @@
                         </select>
                     </li>
                 </ul>
-                <button id="menu-btn" class="md:hidden text-gray-300 text-3xl">☰</button>
+                <button id="menu-btn" class="md:hidden text-gray-300 text-3xl"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="5" width="24" height="2" fill="#D9D9D9" />
+                    <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
+                  </svg></button>
             </nav>
         </div>
         
@@ -46,7 +53,7 @@
         <div class="container1">
             <div class="flex flex-col md:flex-row md:justify-between xs:justify-center">
                 <div class="md:mt-[136px] xs:mt-10 ml-4">
-                   <h1 class="font-family font-semibold md:text-[32px] xs:text-[26px] text-[color:var(--white)]">Elias is a <span class="text-[color:var(--primary)]">web designer</span> and <br><span class="text-[color:var(--primary)]">front-end developer</span></h1><br>
+                   <h1 class="font-family font-semibold md:text-[32px] xs:text-[26px] text-[color:var(--white)]">Shodiyor is a <span class="text-[color:var(--primary)]">web designer</span> and <br><span class="text-[color:var(--primary)]">front-end developer</span></h1><br>
                    <p class="font-family font-normal md:text-base xs:text-[14px] leading-[156%] text-[color:var(--gray)]">He crafts responsive websites where technologies <br> meet creativity</p><br>
                    <button class="border border-[color:var(--primary)] w-[148px] h-[37px] px-4 py-1 border-solid font-medium text-base text-[color:var(--white)]">Contact me!!</button>
                 </div>
@@ -61,15 +68,16 @@
         </div>
 
         <div id="mobile-menu" class="fixed top-0 right-0 bg-[#1e1e1e] h-full w-[55%] z-50 hidden flex-col p-8">
-            <!-- Top -->
+            
             <div class="flex justify-between items-center mb-10">
               <div class="flex items-center gap-2">
                 <img src="./img/logo.png" alt="" class="" />
+                <h1 class="font-family font-bold text-base text-[color:var(--white)]">Shodiyor</h1>
               </div>
               <button id="close-menu" class="text-gray-300 text-3xl">✕</button>
             </div>
       
-            <!-- Links -->
+            
             <nav class="flex flex-col gap-5 text-xl font-medium">
               <a href="#" class="text-[color:var(--primary)]">#<span class="text-[color:var(--gray)]">home</span></a>
               <a href="#" class="text-[color:var(--primary)]">#<span class="text-[color:var(--gray)]">works</span></a>
@@ -82,7 +90,7 @@
               </select>
             </nav>
       
-            <!-- Bottom icons -->
+            
             <div class="mt-20 flex flex-col items-center">
               <div class="flex items-center gap-4">
                 <a href="https://github.com/"><img src="./img/Github.png" alt=""></a>
@@ -93,7 +101,31 @@
           </div>
     </header>
 
-
+    <section class="relative mt-30">
+        <div class="absolute top-0 right-0 border border-[color:var(--gray)] md:w-[91px] xs:w-[60px] h-[91px] border-solid"></div>
+        <div class="container1">
+            <div class="flex justify-center">
+                <div class="border border-[color:var(--gray)] md:w-[712px] xs:w-auto h-[95px] text-center border-solid bg-[var(--background)] sm:p-[30px] xs:p-[10px] relative">
+                    <div class="absolute top-[-16px] left-[20px]"><svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="41.472" height="28.704" fill="#282C33" />
+                        <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF" />
+                      </svg></div>
+                    <h1 class="font-family font-medium md:text-2xl sm:text-xl xs:text-base text-[color:var(--white)]">With great power comes great electricity bill</h1>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-[80px] right-[20px]"><svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="41.472" height="28.704" fill="#282C33" />
+                        <path d="M18.56 19.616C18.56 21.0453 18.0373 22.2507 16.992 23.232C15.968 24.2133 14.72 24.704 13.248 24.704C11.7333 24.704 10.4747 24.2133 9.472 23.232C8.49067 22.2507 8 21.0453 8 19.616C8 18.9333 8.096 18.208 8.288 17.44C8.48 16.672 8.864 15.68 9.44 14.464L14.4 4H19.2L16.544 15.584C17.1413 16.0107 17.6213 16.576 17.984 17.28C18.368 17.9627 18.56 18.7413 18.56 19.616ZM32.8 19.616C32.8 21.0453 32.2773 22.2507 31.232 23.232C30.1867 24.2133 28.9387 24.704 27.488 24.704C26.016 24.704 24.768 24.2133 23.744 23.232C22.7413 22.2507 22.24 21.0453 22.24 19.616C22.24 18.9333 22.336 18.208 22.528 17.44C22.72 16.672 23.1147 15.68 23.712 14.464L28.704 4H33.472L30.784 15.584C31.4027 16.0107 31.8933 16.576 32.256 17.28C32.6187 17.9627 32.8 18.7413 32.8 19.616Z" fill="#ABB2BF" />
+                      </svg></div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="border border-[color:var(--gray)] w-[162px] h-[63px] p-4 border-solid md:absolute top-0 right-[206px]">
+                    <h1 class="font-family font-normal md:text-2xl xs:text-lg text-[color:var(--white)]">- Dr. Who</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
