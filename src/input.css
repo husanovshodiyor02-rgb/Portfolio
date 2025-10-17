@@ -13,13 +13,13 @@
 	--background: #282c33;
 	--white: #fff;
 
-
+    --breakpoint-ft: 860px;
     --breakpoint-xs: 320px;
 }
 
 
 .container1{
     max-width: 1260px;
-    padding: 0px 60px;
+    padding: 0px 40px;
     margin: 0 auto;
 }
