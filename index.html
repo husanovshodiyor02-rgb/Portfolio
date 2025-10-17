@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-[var(--background)]">
-    <header class="relative">
-        <div class="absolute top-0 left-[40px] hidden md:block">
-            <div class="ml-4">
-                <svg width="2" height="191" viewBox="0 0 2 191" fill="none" xmlns="http://www.w3.org/2000/svg">
-                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0.499995 191L0.500004 0L1.5 4.37114e-08L1.5 191L0.499995 191Z" fill="#ABB2BF" />
-                </svg>
+    <header class="sticky top-0 z-55">
+        <div class="relative">
+            <div class="absolute top-0 left-[40px] hidden md:block">
+                <div class="ml-4">
+                    <svg width="2" height="191" viewBox="0 0 2 191" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0.499995 191L0.500004 0L1.5 4.37114e-08L1.5 191L0.499995 191Z" fill="#ABB2BF" />
+                    </svg>
+                </div>
+                <a href="https://github.com/"><img src="./img/Github.png" alt=""></a>
+                <a href="https://www.fifa.com/"><img src="./img/bol.png" alt=""></a>
+                <a href="https://figma.com/"><img src="./img/Figma.png" alt=""></a>
             </div>
-            <a href="https://github.com/"><img src="./img/Github.png" alt=""></a>
-            <a href="https://www.fifa.com/"><img src="./img/bol.png" alt=""></a>
-            <a href="https://figma.com/"><img src="./img/Figma.png" alt=""></a>
         </div>
         
-        <div class="sticky top-0 z-55">
+        
+        <div>
         <div class="container1 bg-[var(--background)] w-full h-15">
             <nav class="flex items-center justify-between py-4">
                 <div class="flex items-center gap-2">
@@ -51,27 +54,12 @@
         </div>
   
         
-        <div class="container1">
-            <div class="flex flex-col md:flex-row md:justify-between xs:justify-center">
-                <div class="md:mt-[136px] xs:mt-10 ml-4">
-                   <h1 class="font-family font-semibold md:text-[32px] xs:text-[26px] text-[color:var(--white)]">Shodiyor is a <span class="text-[color:var(--primary)]">web designer</span> and <br><span class="text-[color:var(--primary)]">front-end developer</span></h1><br>
-                   <p class="font-family font-normal md:text-base xs:text-[14px] leading-[156%] text-[color:var(--gray)]">He crafts responsive websites where technologies <br> meet creativity</p><br>
-                   <button class="border border-[color:var(--primary)] w-[148px] h-[37px] px-4 py-1 border-solid font-medium text-base text-[color:var(--white)]">Contact me!!</button>
-                </div>
-                <div>
-                   <img src="./img/img1.png" alt="" class="md:w-[469px] md:h-[386px] xs:w-auto xs:h-auto mt-[62px]">
-                   <div class="border border-[color:var(--gray)] md:w-[402px] sm:w-[350px] xs:w-[220px] md:h-[37px] xs:h-10 md:p-2 xs:p-3 border-solid bg-[var(--background)] flex items-center gap-2 md:ml-7 xs:ml-0">
-                    <div class="border border-[color:var(--primary)] w-4 h-4 border-solid bg-[var(--primary)]"></div>
-                    <h2 class="font-family font-medium md:text-base xs:text-[14px] text-[color:var(--gray)]">Currently working on <span class="font-semibold text-[color:var(--white)]">Portfolio</span></h2>
-                   </div>
-                </div>
-            </div>
-        </div>
+        
 
         <div id="mobile-menu" class="fixed top-0 right-0 bg-[#1e1e1e] h-full w-[55%] z-50 hidden flex-col p-8">
             
             <div class="flex justify-between items-center mb-10">
-              <div class="flex items-center gap-2 pt-20">
+              <div class="flex items-center gap-2">
                 <img src="./img/logo.png" alt="" class="" />
                 <h1 class="font-family font-bold text-base text-[color:var(--white)]">Shodiyor</h1>
               </div>
@@ -101,6 +89,23 @@
             </div>
           </div>
     </header>
+
+    <section class="container1">
+            <div class="flex flex-col md:flex-row md:justify-between xs:justify-center">
+                <div class="md:mt-[136px] xs:mt-10 ml-4">
+                   <h1 class="font-family font-semibold md:text-[32px] xs:text-[26px] text-[color:var(--white)]">Shodiyor is a <span class="text-[color:var(--primary)]">web designer</span> and <br><span class="text-[color:var(--primary)]">front-end developer</span></h1><br>
+                   <p class="font-family font-normal md:text-base xs:text-[14px] leading-[156%] text-[color:var(--gray)]">He crafts responsive websites where technologies <br> meet creativity</p><br>
+                   <button class="border border-[color:var(--primary)] w-[148px] h-[37px] px-4 py-1 border-solid font-medium text-base text-[color:var(--white)]">Contact me!!</button>
+                </div>
+                <div>
+                   <img src="./img/img1.png" alt="" class="md:w-[469px] md:h-[386px] xs:w-auto xs:h-auto mt-[62px]">
+                   <div class="border border-[color:var(--gray)] md:w-[402px] sm:w-[350px] xs:w-[220px] md:h-[37px] xs:h-10 md:p-2 xs:p-3 border-solid bg-[var(--background)] flex items-center gap-2 md:ml-7 xs:ml-0">
+                    <div class="border border-[color:var(--primary)] w-4 h-4 border-solid bg-[var(--primary)]"></div>
+                    <h2 class="font-family font-medium md:text-base xs:text-[14px] text-[color:var(--gray)]">Currently working on <span class="font-semibold text-[color:var(--white)]">Portfolio</span></h2>
+                   </div>
+                </div>
+            </div>
+    </section>
 
     <section class="relative mt-30">
         <div class="hidden md:block absolute top-0 right-0 border border-[color:var(--gray)] md:w-[91px] xs:w-[60px] h-[91px] border-solid"></div>
